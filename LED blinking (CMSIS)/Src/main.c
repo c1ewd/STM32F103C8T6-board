@@ -9,7 +9,13 @@ void TIM4_IRQHandler(void)
 }
 
 int main()
-{
+{ 
+  // Enable clock alternate functions
+  RCC->APB2ENR |= RCC_APB2ENR_AFIOEN;
+  //NOJTAG: JTAG-DP Disabled and SW-DP Enabled 
+  AFIO->MAPR &= ~AFIO_MAPR_SWJ_CFG;
+  AFIO->MAPR |= AFIO_MAPR_SWJ_CFG_JTAGDISABLE;
+  
   // Enable PORTC Periph clock  
   RCC->APB2ENR |= RCC_APB2ENR_IOPCEN;
   // Configure PC13 as Push Pull (CNF00) output 
