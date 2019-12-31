@@ -1,0 +1,52 @@
+# IAR Settings  
+**/settings/*.crun  
+**/settings/*.dbgdt  
+**/settings/*.cspy  
+**/settings/*.cspy.*  
+**/settings/*.xcl  
+**/settings/*.dni  
+**/settings/*.wsdt  
+**/settings/*.wspos  
+
+# IAR Debug Exe  
+**/Exe/*.sim  
+
+# IAR Debug Obj  
+**/Obj/*.pbd  
+**/Obj/*.pbd.*  
+**/Obj/*.pbi  
+**/Obj/*.pbi.*  
+
+**/Drivers
+**/EWARM/LED blinking (HAL)
+**/EWARM/*.ewd
+**/EWARM/*.ewp
+**/EWARM/*.eww
+**/EWARM/*.icf
+**/EWARM/*.dep
+**/EWARM/settings
+
+**/.mxproject
+
+
+Разобрались с 
+
+
+Господь мне не даст уйти, обратись к дъяволу
+
+
+
+Пишем README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
