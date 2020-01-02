@@ -16,6 +16,7 @@
 **/Obj/*.pbd.*  
 **/Obj/*.pbi  
 **/Obj/*.pbi.*  
+**/Obj
 
 **/Drivers
 **/EWARM/LED blinking (HAL)
@@ -28,7 +29,8 @@
 
 **/.mxproject
 
-
+**/Exe
+**/List
 
 
 
