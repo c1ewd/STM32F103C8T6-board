@@ -59,11 +59,11 @@ int main()
     ADC1->CR2 = ADC_CR2_EXTSEL_2 | ADC_CR2_ADON | ADC_CR2_EXTTRIG ;
 
     ADC1->CR2 |= ADC_CR2_RSTCAL;
-    while(!(ADC1->CR2 & ADC_CR2_RSTCAL));  
+    while(ADC1->CR2 & ADC_CR2_RSTCAL);  
     
     // Calibration
     ADC1->CR2 |= ADC_CR2_CAL;
-    while(!(ADC1->CR2 & ADC_CR2_CAL));  
+    while(ADC1->CR2 & ADC_CR2_CAL);  
     
     // Enable TIM3 Periph clock
     RCC->APB1ENR |= RCC_APB1ENR_TIM3EN;
